@@ -1,0 +1,44 @@
+.service-card {
+    h2 {
+        font-size: 16px;
+        font-weight: bold;
+        margin: 10px auto auto 16px;
+    }
+    ion-card {
+        ion-row {
+            div {
+                width: 33%;
+                ion-card {
+                    background: #D70B52;
+                    text-align: center;
+                    padding: 5px;
+                    height: 70px;
+                    p {
+                        display: -webkit-box;
+                        -webkit-line-clamp: 2;
+                        text-overflow: ellipsis;
+                        -webkit-box-orient: vertical;
+                        overflow: hidden;
+                        color: white;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.tagline-card {
+    margin: 20px auto;
+    ion-card {
+        padding: 10px;
+        h1 {
+            margin: 5px 0;
+            font-size: 18px;
+            font-weight: bold;
+            color: #D70B52;
+        }
+        p {
+            margin: 5px 0;
+        }
+    }
+}

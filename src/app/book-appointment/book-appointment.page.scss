@@ -1,0 +1,34 @@
+// .avail-time {
+//     h2 {
+//         font-size: 16px;
+//         margin: 10px 10px 0 10px;
+//     }
+//     ion-card {
+//         p {
+//             text-align: center;
+//         }
+//     }
+// }
+.appoint-for {
+    h2 {
+        font-size: 18px;
+        margin: 40px 20px 10px 20px;
+        font-weight: bold;
+        border-bottom: 3px solid #D70B52;
+        width: fit-content;
+    }
+    ion-item {
+        margin: 0 15px;
+        ion-input {
+            margin: 10px 0;
+            border-radius: 5px;
+            padding-left: 10px !important;
+            color: gray;
+            border: 1px solid #D70B52;
+        }
+    }
+    ion-button {
+        width: fit-content;
+        margin: auto;
+    }
+}

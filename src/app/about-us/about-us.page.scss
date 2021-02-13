@@ -1,0 +1,48 @@
+.logo {
+    text-align: center;
+    height: 250px;
+    background-image: url(../../assets/imgs/abcccc.png);
+    background-size: cover;
+    img {
+        height: 150px;
+        width: 150px;
+        margin: 20px auto auto auto;
+        border-radius: 50%;
+        border: 1px solid #D70B52;
+    }
+}
+
+.single-row {
+    text-align: center;
+    div {
+        width: 33%;
+        margin: 15px auto;
+        float: left;
+        h3 {
+            color: #D70B52;
+            font-size: 22px;
+            font-weight: bold;
+            margin: 5px 0;
+        }
+        p {
+            margin: 0;
+        }
+    }
+}
+
+.who-we-are {
+    h2 {
+        font-size: 15px;
+        color: #D70B52;
+        font-weight: bold;
+        margin: 10px 0;
+    }
+}
+
+.about {
+    margin-top: -70px;
+    ion-card {
+        padding: 15px 10px;
+        border-radius: 5px;
+    }
+}

@@ -1,0 +1,49 @@
+.testi {
+    height: 100%;
+    ion-slide {
+        ion-card {
+            border-radius: 20px;
+            width: 80%;
+            margin: auto;
+            padding: 20px 10px;
+            div {
+                padding: 10px;
+                p {
+                    font-size: 14px;
+                    line-height: 23px;
+                    text-align: justify;
+                    span {
+                        font-size: 35px;
+                        font-weight: bold;
+                        color: #d70b52;
+                    }
+                }
+            }
+            ion-item {
+                ion-avatar {
+                    margin-right: 10px !important;
+                }
+                border-top: 1px solid gray;
+                img {
+                    height: 100px;
+                    width: 100px;
+                }
+                div {
+                    // padding-left: 10px;
+                    padding: 0;
+                    h2 {
+                        font-size: 16px;
+                        font-weight: bold;
+                        margin: 0 0 0 0;
+                    }
+                    p {
+                        font-size: 11px;
+                        margin: 0;
+                        color: #d70b52;
+                        line-height: normal !important;
+                    }
+                }
+            }
+        }
+    }
+}

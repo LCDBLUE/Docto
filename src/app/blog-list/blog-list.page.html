@@ -1,0 +1,19 @@
+<ion-header>
+    <ion-toolbar color="primary">
+        <ion-buttons slot="start">
+            <ion-back-button defaultHref="/"></ion-back-button>
+        </ion-buttons>
+        <ion-title>Blog</ion-title>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <div class="blog">
+        <ion-card *ngFor="let item of blog ;let i=index" (click)="loadBlog(i)">
+            <img [src]="item?.src">
+            <div>
+                <p>{{item?.title}}</p>
+            </div>
+        </ion-card>
+    </div>
+</ion-content>

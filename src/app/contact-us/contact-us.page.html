@@ -1,0 +1,72 @@
+<ion-header>
+    <ion-toolbar color="primary">
+        <ion-buttons slot="start">
+            <ion-back-button defaultHref="/"></ion-back-button>
+        </ion-buttons>
+        <ion-title>Contact Us</ion-title>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <div class="fixed-div">
+        <img src="assets/imgs/logo.png">
+        <div>
+            <ion-row>
+                <ion-col size="6">
+                    <ion-card>
+                        <h2>Call Us</h2>
+                        <p> <a href="tel: +91 8318578233" target="_system">
+                      +91-8318578233          </a></p>
+                    </ion-card>
+                </ion-col>
+                <ion-col size="6">
+                    <ion-card>
+                        <h2>Mail Us</h2>
+                        <p> <a href="mailto:sk009114@gmail.com" target="_system">
+                      sk009114@gmail.com
+          </a></p>
+                    </ion-card>
+                </ion-col>
+            </ion-row>
+        </div>
+    </div>
+    <div class="form">
+        <ion-card>
+            <form onsubmit="processForm(event)">
+                <ion-list lines="full" class="ion-no-margin ion-no-padding">
+                    <ion-item>
+                        <ion-label position="stacked">First Name
+                            <ion-text color="danger">*</ion-text>
+                        </ion-label>
+                        <ion-input required type="text" oninput="handleFirstNameValue(event)"></ion-input>
+                    </ion-item>
+
+                    <ion-item>
+                        <ion-label position="stacked">Last Name
+                            <ion-text color="danger">*</ion-text>
+                        </ion-label>
+                        <ion-input required type="text" oninput="handleLastNameValue(event)"></ion-input>
+                    </ion-item>
+
+                    <ion-item>
+                        <ion-label position="stacked">Contact
+                            <ion-text color="danger">*</ion-text>
+                        </ion-label>
+                        <ion-input required type="tel" oninput="handleFirstNameValue(event)"></ion-input>
+                    </ion-item>
+
+                    <ion-item>
+                        <ion-label position="stacked">Your Messsage
+                            <ion-text color="danger">*</ion-text>
+                        </ion-label>
+                        <ion-input required type="text" oninput="handleFirstNameValue(event)"></ion-input>
+                    </ion-item>
+                </ion-list>
+
+                <div style="margin-top: 20px;">
+                    <ion-button expand="block" type="submit" class="ion-no-margin">Send Message</ion-button>
+                </div>
+            </form>
+        </ion-card>
+    </div>
+</ion-content>

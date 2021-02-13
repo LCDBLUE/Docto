@@ -1,0 +1,19 @@
+.blog-head {
+    padding: 10px;
+    h1 {
+        font-size: 15px;
+        font-weight: bold;
+    }
+}
+
+.blog-img {
+    img {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+    }
+}
+
+.blog-content {
+    padding: 10px;
+}

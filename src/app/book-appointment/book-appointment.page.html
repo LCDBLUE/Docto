@@ -1,0 +1,72 @@
+<ion-header>
+    <ion-toolbar color="primary">
+        <ion-buttons slot="start">
+            <ion-back-button defaultHref="/"></ion-back-button>
+        </ion-buttons>
+        <ion-title>Appointment</ion-title>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <!-- <div class="avail-time">
+        <h2>Available Time</h2>
+        <ion-row>
+            <ion-col size="4" *ngFor="let t of time">
+                <ion-card>
+                    <p>
+                        {{t?.time}}
+                    </p>
+                </ion-card>
+            </ion-col>
+        </ion-row>
+    </div> -->
+    <div class="appoint-for">
+        <h2>Pateint Details</h2>
+        <ion-item lines="none">
+            <ion-label position="stacked">Full Name
+                <ion-text color="danger">*</ion-text>
+            </ion-label>
+            <ion-input [(ngModel)]="name" placeholder='Enter Full Name' type="text"></ion-input>
+        </ion-item>
+        <ion-item lines="none">
+            <ion-label position="stacked">Age
+                <ion-text color="danger">*</ion-text>
+            </ion-label>
+            <ion-input [(ngModel)]="age" maxlength="2" minlength='1' placeholder='Enter Age' type="number"></ion-input>
+        </ion-item>
+        <ion-item lines="none">
+            <ion-label position="stacked">Contact
+                <ion-text color="danger">*</ion-text>
+            </ion-label>
+            <ion-input [(ngModel)]="contact" maxlength='10' minlength='10' placeholder='Enter Contact Number' type="tel"></ion-input>
+        </ion-item>
+        <ion-item lines="none">
+            <ion-label position="stacked">Appointment Date
+                <ion-text color="danger">*</ion-text>
+            </ion-label>
+            <ion-input [(ngModel)]="date" placeholder='Enter Appointment Date' type="number"></ion-input>
+        </ion-item>
+        <ion-item lines="none">
+            <ion-label position="stacked">Appointment For
+                <ion-text color="danger">*</ion-text> (write about diseas)
+            </ion-label>
+            <ion-input [(ngModel)]="cause" placeholder='Enter Appointment Date' type="text"></ion-input>
+        </ion-item>
+        <h2>Address Details</h2>
+        <ion-item lines="none">
+            <ion-label position="stacked">Address
+                <ion-text color="danger">*</ion-text>
+            </ion-label>
+            <ion-input [(ngModel)]="address" placeholder='Enter Full Address' type="text"></ion-input>
+        </ion-item>
+        <ion-item lines="none">
+            <ion-label position="stacked">Pincode
+                <ion-text color="danger">*</ion-text>
+            </ion-label>
+            <ion-input maxlength='6' [(ngModel)]="pincode" minlength='1' placeholder='Enter Pincode' type="number"></ion-input>
+        </ion-item>
+        <div style="margin-top: 20px;">
+            <ion-button expand="block" (click)="bookAppointment()" type="submit">Book</ion-button>
+        </div>
+    </div>
+</ion-content>

@@ -1,0 +1,32 @@
+<ion-header>
+    <ion-toolbar color='primary'>
+        <ion-buttons slot="start">
+            <ion-back-button defaultHref="/"></ion-back-button>
+        </ion-buttons>
+        <ion-title>Testimonial</ion-title>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <ion-slides pager class="testi">
+        <ion-slide *ngFor="let testimonial of testimonials">
+            <ion-card>
+
+                <div>
+                    <p><span>&#8220;</span>{{testimonial?.quote}}<span>&#8222;</span>
+
+                    </p>
+                </div>
+                <ion-item lines='none'>
+                    <ion-avatar slot="start">
+                        <img [src]="testimonial?.img">
+                    </ion-avatar>
+                    <div>
+                        <h2>{{testimonial?.name}}</h2>
+                        <p>{{testimonial?.city}}</p>
+                    </div>
+                </ion-item>
+            </ion-card>
+        </ion-slide>
+    </ion-slides>
+</ion-content>

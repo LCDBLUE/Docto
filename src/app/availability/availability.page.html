@@ -1,0 +1,33 @@
+<ion-header>
+    <ion-toolbar color='primary'>
+        <ion-buttons slot="start">
+            <ion-back-button defaultHref="/"></ion-back-button>
+        </ion-buttons>
+        <ion-title>Availability</ion-title>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <div class="logo overlay">
+        <img src='assets/imgs/logo.png'>
+    </div>
+    <div class="about">
+        <ion-card class="avail-card">
+            <h1>We are available on</h1>
+            <div class="date">
+                <ion-item lines='none' *ngFor='let item of avail'>
+                    <h2 slot="start">{{item?.day}}</h2>
+                    <p slot="end">{{item.fromTime}} - {{item.toTime}} </p>
+                </ion-item>
+                <ion-item lines='none'>
+                    <h2 slot="start">Sunday</h2>
+                    <p slot="end">Holiday</p>
+                </ion-item>
+            </div>
+            <p class="bottom-row"><span>Lunch Time</span> 01:00 PM - 02:00 PM Everyday</p>
+            <div class="appointment">
+                <ion-button color="primary" (click)="router.navigate(['book-appointment'])"> Book a new appointment</ion-button>
+            </div>
+        </ion-card>
+    </div>
+</ion-content>

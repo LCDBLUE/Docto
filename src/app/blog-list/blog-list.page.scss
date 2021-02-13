@@ -1,0 +1,17 @@
+.blog {
+    ion-card {
+        border-radius: 5px;
+        img {
+            height: 180px;
+            object-fit: cover;
+            width: 100%;
+        }
+        div {
+            padding: 5px 10px;
+            p {
+                font-weight: bold;
+                margin: 4px 0;
+            }
+        }
+    }
+}

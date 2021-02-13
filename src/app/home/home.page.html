@@ -1,20 +1,86 @@
 <ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Blank
-    </ion-title>
-  </ion-toolbar>
+    <ion-toolbar color="primary">
+        <ion-title>
+            Health Care
+        </ion-title>
+    </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
+    <div class="fixed-div">
+        <img src="assets/imgs/logo.png">
+    </div>
+    <div class="row-action">
+        <ion-row>
+            <div>
+                <ion-card (click)="router.navigate(['my-appointment'])">
+                    <img src="assets/imgs/appoint.png">
+                    <p>Appointment</p>
+                </ion-card>
+            </div>
+            <div>
+                <ion-card (click)="router.navigate(['availability'])">
+                    <img src="assets/imgs/avail.png">
+                    <p>Availability</p>
+                </ion-card>
+            </div>
+            <div>
+                <ion-card (click)="router.navigate(['services'])">
+                    <img src="assets/imgs/ser.png">
+                    <p>Services</p>
+                </ion-card>
+            </div>
 
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
-  </div>
+
+        </ion-row>
+        <ion-row>
+            <div>
+                <ion-card (click)="router.navigate(['blog-list'])">
+                    <img src="assets/imgs/blog.png">
+                    <p>Doc Blog</p>
+                </ion-card>
+            </div>
+            <div>
+                <ion-card (click)="router.navigate(['testimonial'])">
+                    <img src="assets/imgs/testi.png">
+                    <p>Testimonial</p>
+                </ion-card>
+            </div>
+            <div>
+                <ion-card (click)="router.navigate(['gallery'])">
+                    <img src="assets/imgs/gal.png">
+                    <p>Gallery</p>
+                </ion-card>
+            </div>
+        </ion-row>
+        <ion-row>
+
+            <div>
+                <ion-card (click)="router.navigate(['about-us'])">
+                    <img src="assets/imgs/about.png">
+                    <p>About Us</p>
+                </ion-card>
+            </div>
+            <div>
+                <ion-card (click)="router.navigate(['reach-us'])">
+                    <img src="assets/imgs/reach.png">
+                    <p>Reach Us</p>
+                </ion-card>
+            </div>
+            <div>
+                <ion-card (click)="router.navigate(['contact-us'])">
+                    <img src="assets/imgs/phone.png">
+                    <p>Contact Us</p>
+                </ion-card>
+            </div>
+        </ion-row>
+    </div>
+    <div class="appointment">
+        <ion-button color="primary" (click)="router.navigate(['book-appointment'])"> Book an appointment</ion-button>
+    </div>
+
+    <!-- <div class="powered">
+        <p>
+            <ion-icon name="logo-codepen"></ion-icon> Powered By <span style="color: #0d3a4c;font-weight: bold;font-size: 13px;">HEALTHCARE</span></p>
+    </div> -->
 </ion-content>

@@ -1,0 +1,29 @@
+<ion-header>
+    <ion-toolbar color="primary">
+        <ion-buttons slot="start">
+            <ion-back-button defaultHref="/.."></ion-back-button>
+        </ion-buttons>
+        <ion-title>Gallery</ion-title>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <ion-row class="seg">
+        <p id="one" (click)='onLeftSegClick()' class="{{left}}">
+            Photo
+        </p>
+        <p id="two" (click)='onRightSegClick()' class="{{right}}">Video</p>
+    </ion-row>
+    <ion-grid class="gal" *ngIf="!rightSelected">
+        <ion-row>
+            <ion-col *ngFor="let image of gallery" size="4">
+                <img [src]="image?.src">
+            </ion-col>
+        </ion-row>
+    </ion-grid>
+    <ion-row *ngIf="rightSelected" class="video">
+        <div *ngFor="let vid of video">
+            <iframe width="100%" height="220px" [src]="vid?.src | youtube" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+    </ion-row>
+</ion-content>

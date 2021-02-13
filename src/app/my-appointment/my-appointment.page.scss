@@ -1,0 +1,62 @@
+.align-not {
+    margin-top: 150px;
+    text-align: center;
+    p {
+        font-size: 18px;
+        color: gray;
+        margin: 5px 0;
+    }
+    ion-icon {
+        font-size: 50px;
+        color: gray;
+    }
+}
+
+.appointment {
+    position: absolute;
+    bottom: 20px;
+    left: 20%;
+    z-index: 9999;
+    text-align: center;
+    ion-button {
+        text-transform: capitalize;
+    }
+}
+
+h2 {
+    font-size: 14px;
+    font-weight: bold;
+    margin: 1px !important;
+}
+
+h1 {
+    margin: 2px;
+    font-weight: bold;
+    font-size: 17px;
+}
+
+h4 {
+    margin: 0 2px;
+    font-size: 16px;
+}
+
+p {
+    font-size: 13px;
+}
+
+ion-item {
+    padding-left: 0 !important;
+    .item-native {
+        // padding-left: unset;
+        // padding-right: unset;
+        padding-inline-start: 0 !important
+    }
+}
+
+ion-row {
+    margin: 0;
+}
+
+ion-button {
+    margin: 10px 0;
+}

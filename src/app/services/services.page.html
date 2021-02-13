@@ -1,0 +1,29 @@
+<ion-header>
+    <ion-toolbar color='primary'>
+        <ion-buttons slot="start">
+            <ion-back-button defaultHref="/"></ion-back-button>
+        </ion-buttons>
+        <ion-title>Services</ion-title>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <div class="tagline-card">
+        <ion-card>
+            <h1>The heart of your healthcare</h1>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aspernatur laboriosam consectetur ea sequi sunt doloremque ad. Quae fugit asperiores, natus dicta voluptatum unde alias earum! Inventore quas sit id suscipit.</p>
+        </ion-card>
+    </div>
+    <div class="service-card">
+        <ion-card>
+            <h2>Services that we offer</h2>
+            <ion-row>
+                <div *ngFor="let item of service">
+                    <ion-card>
+                        <p>{{item?.name}}</p>
+                    </ion-card>
+                </div>
+            </ion-row>
+        </ion-card>
+    </div>
+</ion-content>

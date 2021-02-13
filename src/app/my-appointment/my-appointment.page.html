@@ -1,0 +1,39 @@
+<ion-header>
+    <ion-toolbar color="primary">
+        <ion-buttons slot="start">
+            <ion-back-button defaultHref="/"></ion-back-button>
+        </ion-buttons>
+        <ion-title>My Appointments</ion-title>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <div>
+        <ion-card style="padding: 10px;" *ngFor="let demo of demo">
+            <ion-row>
+                <h1>Name: {{demo?.name}}</h1>
+            </ion-row>
+            <ion-row>
+                <ion-item lines='none'>
+                    <h2 slot="start">Appointment For: </h2>
+                    <p slot="start">{{demo?.cause}}</p>
+                </ion-item>
+            </ion-row>
+            <ion-row>
+                <ion-item lines='none'>
+                    <h4 slot="start">Time: </h4>
+                    <p slot="start">{{demo?.time}}</p>
+                    <ion-button slot="end" round (click)='onCancel()'>Cancel</ion-button>
+                </ion-item>
+            </ion-row>
+        </ion-card>
+    </div>
+    <!-- <div class="align-not" text-align *ngIf='!content'>
+
+        <ion-icon name="information-circle-outline"></ion-icon> <br>
+        <p>No Appointments</p>
+    </div> -->
+    <div class="appointment">
+        <ion-button color="primary" (click)="router.navigate(['book-appointment'])"> Book a new appointment</ion-button>
+    </div>
+</ion-content>
